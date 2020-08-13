@@ -4,14 +4,16 @@ using ASP_MVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ASP_MVC.Migrations
 {
     [DbContext(typeof(ASP_MVCDbContext))]
-    partial class ASP_MVCDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200812195918_CorrectDateOfBirthColumn")]
+    partial class CorrectDateOfBirthColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

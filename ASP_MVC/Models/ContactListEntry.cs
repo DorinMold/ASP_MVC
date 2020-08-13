@@ -19,7 +19,7 @@ namespace ASP_MVC.Models
 
         [DataType(DataType.Date)]
         [Display(Name = "Date of Birth")]
-        public DateTime? DateOfBorth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
 
         [StringLength(30)]
         [DataType(DataType.PhoneNumber)]

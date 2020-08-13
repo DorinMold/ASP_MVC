@@ -86,7 +86,7 @@ namespace ASP_MVC.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ContactType,Name,DateOfBorth,PhoneNumber,Email")] ContactListEntry contactListEntry)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ContactType,Name,DateOfBirth,PhoneNumber,Email")] ContactListEntry contactListEntry)
         {
             if (id != contactListEntry.Id)
             {
